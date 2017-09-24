@@ -3,7 +3,7 @@ Type: Package
 Title: Linear Regression
 Version: 1.0
 Date: 2017-09-24
-Author: Somaya Khoda Bakhsh
+Author: Somaya Khoda Bakhsh and Thi Phalm
 Maintainer: Who to complain to <somkh364@student.liu.se>
 Description: This package handls multiple linerar regressions
 License: GPL-2
