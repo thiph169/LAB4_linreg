@@ -1,0 +1,57 @@
+---
+title: "Vignette For Linear Regression function"
+author: "Somaya And Thi"
+date: "r Sys.Date()"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# *What is this package about*
+
+This package is about to handle multiple linear regression models using linear algebra to create the needed funtions. LinReg returens values such as Estimate of regression coefficients, residuals, fitted values, degree of freedom and variance of the regression coefficients using metods like print(), plot(), resid(), pred(), coef() and summary(). you will find some example of methods. 
+
+# *The function Linreg()*
+
+Our function is called LinReg() here which have the two arguments formula and data and returns an object with class linreg RC class.
+.
+library(LinReg)
+data("iris")
+
+
+#### *Function example*
+.
+example_formula <- Petal.Length~Sepal.Width+Sepal.Length
+
+
+# *Methods examples*
+ 1. print() returns the coefficients with names.
+.
+ linreg_example$print()
+ 
+
+2. coef() returns the coefficients as vector
+.
+ linreg_example$coef()
+ 
+
+3. pred() returns the predicted values
+.
+ predicted <- linreg_exmaple$pred()
+ predicted[1:5]
+ 
+
+4. plot() returns Residuals vs Fitted and Scale-Location plots
+.
+ linreg_example$plot()
+ 
+
+5. resid()
+.
+ residuals <- linreg_example$resid()
+ residuals[1:5]
+ 
+
+
