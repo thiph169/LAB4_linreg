@@ -1,3 +1,17 @@
+#' @title Linear regression
+#' @field formula a formula, format y ~ x_1 + x_2 + ... + x_n.
+#' @field data a data frame.
+#' @description Returns the result of the Linear Regression
+#' @examples 
+#' data(iris)
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$print()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$plot()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$resid()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$pred()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$coef()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$summary()
+#' @export linreg
+#' @export
 linreg <- setRefClass(
   Class = "linreg",
   fields = list(
